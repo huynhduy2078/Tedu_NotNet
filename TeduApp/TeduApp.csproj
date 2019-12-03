@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <UserSecretsId>674d7623-19a1-4fc3-96f6-ba9cfbf586f9</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.9.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TeduApp.Application\TeduApp.Application.csproj" />
+    <ProjectReference Include="..\TeduApp.Data.EF\TeduApp.Data.EF.csproj" />
+    <ProjectReference Include="..\TeduApp.Data\TeduApp.Data.csproj" />
+    <ProjectReference Include="..\TeduApp.Infrastrucre\TeduApp.Infrastrucre.csproj" />
+    <ProjectReference Include="..\TeduApp.Utilities\TeduApp.Utilities.csproj" />
+  </ItemGroup>
+
+</Project>
